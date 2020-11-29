@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size_15dp"
+    android:layout_margin="@dimen/size_10dp"
+    android:padding="@dimen/size_20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/number_of_matches_view"
+            android:layout_marginTop="@dimen/size_15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/size_50dp"
+                    android:layout_height="@dimen/size_50dp"
+                    android:layout_marginEnd="@dimen/size_20dp"
+                    android:tint="@color/colorLightBlue"
+                    android:id="@+id/mode_left_arrow"
+                    android:src="@drawable/ic_left_arrow" />
+
+                <TextView
+                    android:layout_width="@dimen/size_150dp"
+                    android:layout_height="70dp"
+                    android:textSize="@dimen/textsize_24sp"
+                    android:padding="@dimen/size_10dp"
+                    android:gravity="center"
+                    android:id="@+id/mode"
+                    android:background="@drawable/custom_border_1"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/level_medium"/>
+
+                <ImageView
+                    android:layout_width="@dimen/size_50dp"
+                    android:layout_height="@dimen/size_50dp"
+                    android:layout_marginStart="@dimen/size_20dp"
+                    android:src="@drawable/ic_right_arrow"
+                    android:id="@+id/mode_right_arrow"
+                    android:tint="@color/colorLightBlue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:background="@drawable/custom_ripple_effect_3"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:text="@string/play"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="@dimen/size_20dp"
+            android:id="@+id/mode_button"/>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

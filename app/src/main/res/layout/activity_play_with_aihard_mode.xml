@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayWithAIHardModeActivity"
+    android:background="@color/colorLightBrown"
+    android:id="@+id/offline_ai_hard_mode_main_view">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_100dp"
+        app:cardBackgroundColor="@color/colorDarkBlue"
+        app:cardCornerRadius="@dimen/size_20dp"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_24sp"
+            android:layout_gravity="center"
+            android:id="@+id/offline_ai_hard_mode_display_turn"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/size_360dp"
+        android:layout_height="@dimen/size_360dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/colorDarkGray"
+        android:id="@+id/offline_ai_hard_mode_hall_view">
+        <LinearLayout
+            android:layout_width="@dimen/size_360dp"
+            android:layout_height="@dimen/size_360dp"
+            android:orientation="vertical"
+            android:background="@drawable/ic_plateform">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent">
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_1"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_2"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_3"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent">
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_4"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_5"
+                    android:padding="6dp" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_6"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent">
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_7"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_8"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/offline_ai_hard_mode_button_9"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

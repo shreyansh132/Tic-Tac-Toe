@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RealTimeGameActivity"
+    android:background="@color/colorLightBrown"
+    android:id="@+id/online_friend_main_view">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_100dp"
+        app:cardBackgroundColor="@color/colorDarkBlue"
+        app:cardCornerRadius="@dimen/size_20dp"
+        android:layout_marginStart="@dimen/size_20dp"
+        android:layout_marginEnd="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="@dimen/size_50dp"
+                    android:layout_height="@dimen/size_5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorGreen"
+                    android:id="@+id/online_friend_x_turn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    fontPath="fonts/aller.ttf"
+                    android:id="@+id/online_friend_x_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_20sp"
+                    android:layout_gravity="center"
+                    fontPath="fonts/aller.ttf"
+                    android:id="@+id/online_friend_x_score" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/size_2dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:layout_marginBottom="@dimen/size_15dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size_50dp"
+                    android:layout_height="@dimen/size_5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorRed"
+                    android:id="@+id/online_friend_o_turn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    fontPath="fonts/aller.ttf"
+                    android:id="@+id/online_friend_o_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_20sp"
+                    android:layout_gravity="center"
+                    fontPath="fonts/aller.ttf"
+                    android:id="@+id/online_friend_o_score" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="@dimen/size_360dp"
+        android:layout_height="@dimen/size_360dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/colorDarkGray"
+        android:id="@+id/online_friend_hall_view">
+        <LinearLayout
+            android:layout_width="@dimen/size_360dp"
+            android:layout_height="@dimen/size_360dp"
+            android:orientation="vertical"
+            android:background="@drawable/ic_plateform">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent">
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_1"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_2"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_3"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent">
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_4"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_5"
+                    android:padding="6dp" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_6"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent">
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_7"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_8"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="@dimen/size_120dp"
+                    android:layout_height="@dimen/size_120dp"
+                    android:background="@color/colorTransparent"
+                    android:textSize="@dimen/textsize_40sp"
+                    android:onClick="drawXorO"
+                    android:id="@+id/online_friend_button_9"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_10dp"
+        android:layout_marginStart="@dimen/size_20dp">
+        <com.github.florent37.shapeofview.shapes.CircleView
+            android:layout_width="@dimen/size_60dp"
+            android:layout_height="@dimen/size_60dp"
+            android:elevation="4dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar1"/>
+        </com.github.florent37.shapeofview.shapes.CircleView>
+    </LinearLayout>
+
+</RelativeLayout>

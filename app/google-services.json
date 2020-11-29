@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "74562932696",
+    "firebase_url": "https://tictactoe-adaa2.firebaseio.com",
+    "project_id": "tictactoe-adaa2",
+    "storage_bucket": "tictactoe-adaa2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74562932696:android:a4492c77b965e23c9eecad",
+        "android_client_info": {
+          "package_name": "com.rgame.tictactoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74562932696-66u2aus8a0dt95d1sd567efl4mk8eemv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-Mp0doscpdwbmS3kGr6fkuf_rBATIa3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74562932696-66u2aus8a0dt95d1sd567efl4mk8eemv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

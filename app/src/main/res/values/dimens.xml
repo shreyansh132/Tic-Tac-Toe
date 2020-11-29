@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size_1dp">1dp</dimen>
+    <dimen name="size_2dp">2dp</dimen>
+    <dimen name="size_5dp">5dp</dimen>
+    <dimen name="size_10dp">10dp</dimen>
+    <dimen name="size_15dp">15dp</dimen>
+    <dimen name="size_20dp">20dp</dimen>
+    <dimen name="size_25dp">25dp</dimen>
+    <dimen name="size_30dp">30dp</dimen>
+    <dimen name="size_45dp">45dp</dimen>
+    <dimen name="size_50dp">50dp</dimen>
+    <dimen name="size_60dp">60dp</dimen>
+    <dimen name="size_90dp">90dp</dimen>
+    <dimen name="size_80dp">80dp</dimen>
+    <dimen name="size_100dp">100dp</dimen>
+    <dimen name="size_120dp">120dp</dimen>
+    <dimen name="size_150dp">150dp</dimen>
+    <dimen name="size_360dp">360dp</dimen>
+
+    <!-- Textsizes -->
+    <dimen name="textsize_12sp">12sp</dimen>
+    <dimen name="textsize_14sp">14sp</dimen>
+    <dimen name="textsize_16sp">16sp</dimen>
+    <dimen name="textsize_18sp">18sp</dimen>
+    <dimen name="textsize_20sp">20sp</dimen>
+    <dimen name="textsize_22sp">22sp</dimen>
+    <dimen name="textsize_24sp">24sp</dimen>
+    <dimen name="textsize_40sp">40sp</dimen>
+    <dimen name="size_40dp">40dp</dimen>
+
+
+</resources>

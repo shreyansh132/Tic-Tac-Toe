@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleScreenTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/activity_title_screen</item>
+    </style>
+
+    <style name="custom_dialog" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Please Wait</item>
+        <item name="DialogSpotColor">@color/colorWhite</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+</resources>

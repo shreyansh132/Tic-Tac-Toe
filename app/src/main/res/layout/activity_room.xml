@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomActivity"
+    android:background="@color/colorLightBrown"
+    android:id="@+id/room_main_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBrown"
+        android:orientation="vertical"
+        android:id="@+id/room_search_join_view">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:background="@drawable/custom_edittext_1"
+            android:textColorHint="@color/colorGray"
+            android:padding="@dimen/size_10dp"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/room_search"
+            android:drawableEnd="@drawable/ic_search"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:id="@+id/room_recycler_view"
+            android:layout_marginTop="@dimen/size_15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightBrown"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/room_share_view">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_18sp"
+            android:text="@string/join_room"
+            android:id="@+id/room_owner_name"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_18sp"
+            android:text="@string/join_room"
+            android:gravity="center"
+            android:id="@+id/room_name"
+            android:layout_marginTop="@dimen/size_10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_18sp"
+            android:text="@string/join_room"
+            android:gravity="center"
+            android:id="@+id/room_password"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/size_10dp" />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_ripple_effect_6"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:id="@+id/room_share_button"
+            android:text="@string/share_room"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_ripple_effect_6"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:id="@+id/room_play_button"
+            android:text="@string/play"
+            android:visibility="gone"
+            android:backgroundTint="@color/colorGreen"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorLightBrown"
+        android:id="@+id/room_create_join_view">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_ripple_effect_6"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:text="@string/create_room"
+            android:id="@+id/room_create_button"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_30dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:text="@string/private_room"
+            android:textColor="@color/colorLightBlue"
+            android:id="@+id/room_private_button"
+            android:visibility="gone"
+            android:background="@drawable/custom_ripple_effect_1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_30dp"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:text="@string/public_room"
+            android:background="@drawable/custom_ripple_effect_8"
+            android:id="@+id/room_public_button"
+            android:visibility="gone"
+            android:textColor="@color/colorGreen"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_ripple_effect_5"
+            android:layout_marginStart="@dimen/size_20dp"
+            android:layout_marginEnd="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:text="@string/join_room"
+            android:id="@+id/room_join_button"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
